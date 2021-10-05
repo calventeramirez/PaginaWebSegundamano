@@ -1,0 +1,205 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-ene-2021, 17:34:18
+    Author     : Pablo
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#contenedor{
+    margin: 0px auto;
+    width: 990px;
+    text-align:left;
+}
+/*Cabecera*/
+#cabecera{
+    margin: 0px;
+    width: 852px;
+    background: #003B6F;
+    color: white;
+    height: 200px;
+    padding: 1.5em;
+}
+
+/*Menu*/
+.navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.dropdown-toggle::after {
+    transition: transform 0.15s linear; 
+}
+
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+nav{
+    margin: 0px;
+    width: 900px;
+    height: 40px;
+    background: -ms-linear-gradient(top, #ccddff, #505050);
+    background: -webkit-linear-gradient(top,  #ccddff, #505050);
+    background: -moz-linear-gradient(top, #ccddff, #505050);
+}
+ul{
+    list-style: none;
+}
+.menu li a{
+    color:white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+
+.menu li a:hover{
+    background: -ms-linear-gradient(top, white, #505050);
+    background: -webkit-linear-gradient(top, white, #505050);
+    background: -moz-linear-gradient(top, white, #505050);
+}
+
+.menu > li {
+    float: left;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+
+
+/*Contenido*/
+
+section{
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    width: 878px;
+    padding: 10px;
+    background: #ffc2b3;
+}
+
+.categorias{
+    margin-left: 50px;
+}
+/*Tabla*/
+table{
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #000;
+}
+th, td{
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+    border:1px solid #000;
+    border-spacing: 0;
+}
+.odd th, .odd td{
+    background: #eee;
+}
+
+.even th, .even td{
+    background: #ffffb3;
+}
+.boton{
+    padding: 10px;
+    color: white;
+    background: blue;
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+
+.boton:hover{
+    color: blue;
+    background: whitesmoke;
+}
+
+/*Pie*/
+footer{
+    clear:both;
+    padding: 10px;
+    width: 880px;
+    background: #003B6F;
+    color:white;
+}
+
+/*Formulario*/
+/*
+aside{
+    width: 878px;
+    padding-top: 10px;
+    background: #ffc2b3;
+}
+
+aside li{
+    list-style-type: none;
+    align-items: center;
+}
+
+aside .botonform{
+    padding: 10px;
+    color: white;
+    background: blue;
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+aside .botonform:hover{
+    color: blue;
+    background: whitesmoke;
+}*/
+
+.login { 
+    width:300px;
+    height:300px;
+    text-align:center;
+}
+input { 
+    width: 80%; 
+    margin-bottom: 10px; 
+    background: rgba(0,0,0,0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 35px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+input:focus { box-shadow: inset 0 -5px 35px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+
+.botonform{
+    padding: 10px;
+    color: white;
+    background: #ffc2b3;
+    border-radius: 50px;
+    border: 1px solid red;
+}
+.botonform:hover{
+    color: blue;
+    background: whitesmoke;
+}
